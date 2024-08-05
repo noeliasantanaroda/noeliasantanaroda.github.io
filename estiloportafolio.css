@@ -1,0 +1,27 @@
+*{
+    zoom:92%
+}
+body{
+    background-image: url(https://i.pinimg.com/originals/36/a5/ad/36a5ad2fa9a5b1c489646fcd367bb0b2.gif);
+    background-size:cover;
+    text-align: center;
+    font-size:x-large
+}
+.img-container {
+    text-align: center;
+    size: 600px;
+}
+#pres{
+   color: aliceblue;
+}
+#pos{
+    color: rgb(247, 211, 11);
+    font-family:fantasy;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: blueviolet;
+}
+.mi-imagen img {
+    width: 20%;
+    }
+
+
