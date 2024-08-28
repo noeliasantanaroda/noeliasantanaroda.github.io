@@ -1,6 +1,4 @@
-*{
-    zoom:92%
-}
+
 body{
     background-image: url(https://i.pinimg.com/originals/36/a5/ad/36a5ad2fa9a5b1c489646fcd367bb0b2.gif);
     background-size:cover;
@@ -8,8 +6,14 @@ body{
     font-size:x-large
 }
 .img-container {
-    text-align: center;
-    size: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
+    width: 40%; /* Ajusta este valor según tus necesidades */
+    height: auto;
 }
 #pres{
    color: aliceblue;
@@ -23,5 +27,31 @@ body{
 .mi-imagen img {
     width: 20%;
     }
-
-
+    
+    /* Resolución Estándar: 1366 x 768 px */
+    @media (min-width: 1025px) {
+        .mi-imagen a {
+            flex: 1 1 30%;
+        }
+    }
+    
+    /* Tableta en Modo Vertical: 768 x 1024 px */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .mi-imagen a {
+            flex: 1 1 45%;
+        }
+    }
+    
+    /* Smartphone Pequeño (Ej. iPhone SE): 320 x 568 px */
+    @media (max-width: 768px) {
+        .mi-imagen {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .mi-imagen img {
+            width: 90%; 
+            margin-bottom: 10px; 
+        }
+    }
+   
